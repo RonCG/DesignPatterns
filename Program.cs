@@ -8,11 +8,14 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             /* Builder */
+            Console.WriteLine("---- Builder ----");
             var cb = new CodeBuilder("Person").AddField("Name", "string").AddField("Age", "int");
             Console.WriteLine(cb);
+            Console.WriteLine();
 
-            
+
             /* Factory */
+            Console.WriteLine("---- Factory ----");
             PersonFactory pf = new PersonFactory();
 
             Person p1 = pf.CreatePerson("Ron");
@@ -20,6 +23,8 @@ namespace DesignPatterns
 
             Console.WriteLine(p1);
             Console.WriteLine(p2);
+            Console.WriteLine();
+
         }
     }
 }
