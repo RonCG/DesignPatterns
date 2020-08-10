@@ -10,7 +10,7 @@ namespace DesignPatterns.Factory
 
         public Person CreatePerson(string name)
         {
-            return new Person { Id = id++, Name = name };
+            return new Person { ID = id++, Name = name };
         }
     }
 }

@@ -6,12 +6,12 @@ namespace DesignPatterns.Factory
 {
     public class Person
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
 
         public override string ToString()
         {
-            return $"Id: {Id}, Name: {Name}";
+            return $"ID: {ID}, Name: {Name}";
         }
 
     }
