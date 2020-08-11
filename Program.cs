@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Factory;
+using DesignPatterns.Prototype;
 using System;
 
 namespace DesignPatterns
@@ -24,6 +25,20 @@ namespace DesignPatterns
             Console.WriteLine(p1);
             Console.WriteLine(p2);
             Console.WriteLine();
+
+
+            /* Prototype */
+            Console.WriteLine("---- Prototype ----");
+            Point start = new Point(0,1);
+            Point end = new Point(0,10);
+            Line line = new Line(start, end);
+            Line copy = line.DeepCopy();
+            copy.Start.X = 10;
+            Console.WriteLine($"Original: {line}");
+            Console.WriteLine($"Copy: {copy}");
+
+
+            Console.ReadLine();
 
         }
     }
